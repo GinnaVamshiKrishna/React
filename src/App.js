@@ -1,8 +1,14 @@
-
+import{Routes,Route} from 'react-router-dom';
+import Hello1 from './components/Hello1';
+import{Next} from './components/Next';
 
 function App() {
   return (
-    <h1>HELLO WORLD</h1>
+    <Routes>
+      <Route path='/' element={<Hello1 />} />
+      <Route path='/Next' element={<Next />} />
+    </Routes>
+   
   );
 }
 

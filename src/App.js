@@ -1,15 +1,13 @@
+import './App.css';
 import{Routes,Route} from 'react-router-dom';
-import Hello1 from './components/Hello1';
-import{Next} from './components/Next';
+import Login from './components/Login'
 
 function App() {
   return (
     <Routes>
-      <Route path='/' element={<Hello1 />} />
-      <Route path='/Next' element={<Next />} />
-      
+      <Route path='/' element={<Login/>}/>
     </Routes>
-   
+    
   );
 }
 
